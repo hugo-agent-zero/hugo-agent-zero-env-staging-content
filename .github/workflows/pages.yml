@@ -33,7 +33,7 @@ jobs:
         working-directory: site
         env:
           GOPROXY: direct
-        run: hugo mod get github.com/hugo-agent-zero/hugo-agent-zero-core@v1.x.x
+        run: hugo mod get github.com/hugo-agent-zero/hugo-agent-zero-core@v1
       - name: Use this content commit
         working-directory: site
         env:
