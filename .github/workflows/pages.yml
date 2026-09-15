@@ -29,11 +29,6 @@ jobs:
         with:
           hugo-version: "0.152.2"
           extended: false
-      - name: Use latest 1.x core
-        working-directory: site
-        env:
-          GOPROXY: direct
-        run: hugo mod get github.com/hugo-agent-zero/hugo-agent-zero-core@v1
       - name: Use this content commit
         working-directory: site
         env:
