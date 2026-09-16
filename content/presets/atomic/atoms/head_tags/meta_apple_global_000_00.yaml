@@ -1,4 +1,4 @@
 preset:
   # Child Apple global. Active when layouts part._preset → preset.
   apple-mobile-web-app-title: Hugo Agent Zero
-  apple-mobile-web-app-capable: "yes"
+  mobile-web-app-capable: "yes"
