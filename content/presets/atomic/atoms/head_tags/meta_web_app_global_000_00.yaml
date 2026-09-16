@@ -1,0 +1,4 @@
+preset:
+  # Web app global. Active when layouts part._preset → preset.
+  apple-mobile-web-app-title: Hugo Agent Zero
+  mobile-web-app-capable: "yes"
