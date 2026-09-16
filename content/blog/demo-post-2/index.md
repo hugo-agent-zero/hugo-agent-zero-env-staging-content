@@ -26,7 +26,7 @@ params:
     meta:
       _apple_basic:
         apple-mobile-web-app-status-bar-style: black-translucent-123
-      _apple_global:
+      _web_app_global:
         apple-mobile-web-app-title: TODO Child 
       html_basic:
         _description: "Demo page for single blog post layout and params.meta.html_basic meta tags."
