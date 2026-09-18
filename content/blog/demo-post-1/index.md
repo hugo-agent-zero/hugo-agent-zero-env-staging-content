@@ -20,7 +20,9 @@ This post lives in a **leaf bundle**: `content/blog/demo-post-1/index.md` plus f
 
 {{< haz key="blog" >}}
 
-![FPO cover image bundled with this post](cover.svg)
+{{< haz_img key="100_100" >}}
+<img src="haz-img-test.jpg" alt="haz_img ladder test photo" loading="lazy">
+{{< /haz_img >}}
 
 This paragraph is only for a short automatic summary if you add a `<!--more-->` marker after the intro line in a longer article.
 
