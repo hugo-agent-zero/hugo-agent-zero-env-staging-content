@@ -20,7 +20,7 @@ This post lives in a **leaf bundle**: `content/blog/demo-post-1/index.md` plus f
 
 {{< haz key="blog" >}}
 
-{{< haz_img key="100_100" >}}
+{{< haz_img key="50_50" >}}
 <img src="haz-img-test.jpg" alt="haz_img ladder test photo" loading="lazy">
 {{< /haz_img >}}
 
