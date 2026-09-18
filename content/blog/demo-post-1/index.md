@@ -22,10 +22,9 @@ This post lives in a **leaf bundle**: `content/blog/demo-post-1/index.md` plus f
 
 {{< haz_img key="100_100" >}}
 <div id="haz_img_demo_gallery" class="haz_img_demo_group">
-<img src="files/haz-img-test.jpg" alt="haz_img full-measure test photo (subpath)" class="haz_img_demo" loading="lazy">
-{{< /haz_img >}}
-{{< haz_img key="50_50" >}}
-<img src="haz-img-test.jpg" alt="haz_img half-measure test photo" loading="lazy">
+<img src="files/haz-img-test.jpg" alt="haz_img multi one class" class="haz_img_demo" loading="lazy">
+<img src="files/haz-img-test.jpg" alt="haz_img multi no class" loading="lazy">
+<img src="files/haz-img-test.jpg" alt="haz_img multi two classes" class="haz_img_demo haz_img_extra" loading="lazy">
 </div>
 {{< /haz_img >}}
 
