@@ -34,6 +34,11 @@ jobs:
         env:
           GOPROXY: direct
         run: hugo mod get github.com/hugo-agent-zero/hugoagentzero_com-content@${{ github.sha }}
+      - name: Use latest 1.x core
+        working-directory: site
+        env:
+          GOPROXY: direct
+        run: hugo mod get github.com/hugo-agent-zero/hugo-agent-zero-core@v1.x.x
       - name: Build
         working-directory: site
         run: hugo --baseURL "https://hugo-agent-zero.github.io/hugoagentzero_com-content/"
