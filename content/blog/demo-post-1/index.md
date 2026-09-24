@@ -21,11 +21,7 @@ This post lives in a **leaf bundle**: `content/blog/demo-post-1/index.md` plus f
 {{< haz key="blog" >}}
 
 {{< haz_img key="m100_t100_d100" >}}
-<div id="haz_img_demo_gallery" class="haz_img_demo_group">
-<img src="files/haz-img-test.jpg" alt="haz_img multi one class" class="haz_img_demo" loading="lazy">
-<img src="files/haz-img-test.jpg" alt="haz_img multi no class" loading="lazy">
-<img src="files/haz-img-test.jpg" alt="haz_img multi two classes" class="haz_img_demo haz_img_extra" loading="lazy">
-</div>
+<img src="files/haz-img-test.jpg" alt="haz_img test" class="haz_img_demo" loading="lazy">
 {{< /haz_img >}}
 
 This paragraph is only for a short automatic summary if you add a `<!--more-->` marker after the intro line in a longer article.
