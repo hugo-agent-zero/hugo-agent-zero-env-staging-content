@@ -12,3 +12,6 @@ Thumbs.db
 # Env / secrets (if added later)
 .env
 .env.*
+
+# Local masters / scratch — rename to *.orig to keep off GH and out of the build
+*.orig
