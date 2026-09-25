@@ -44,7 +44,7 @@ The picture above should look like the photograph, not a 16/9 crop and not 150px
 
 ### Full, then half left
 
-100 / 100 / 50, `d_align: left` only. On a phone it is full width (no float); on desktop it sits left and this copy should wrap the right side. Keep dragging the window across 992 to see the jump.
+100 / 100 / 50, `d.align: left` only. On a phone it is full width (no float); on desktop it sits left and this copy should wrap the right side. Keep dragging the window across 992 to see the jump.
 
 {{< haz_img key="desk_half_left" >}}
 <img src="files/haz-img-test.jpg" alt="desk_half_left — full on small, half left on desktop">
@@ -56,7 +56,7 @@ Wrap text for the half-desktop float. If the next block starts beside the pictur
 
 ### Quarter right
 
-25 / 25 / 25, `m_align: right`. Small on every band. Copy should run down the left.
+25 / 25 / 25, `m.align: right`. Small on every band. Copy should run down the left.
 
 {{< haz_img key="quarter_right" >}}
 <img src="files/haz-img-test.jpg" alt="quarter_right — 25% square, float right">
@@ -68,7 +68,7 @@ This column of words is here so the quarter square has a neighbor. On a narrow p
 
 ### Mid, centered
 
-75 / 50 / 75, `m_align: center`. Tablet should look narrower than phone or desktop.
+75 / 50 / 75, `m.align: center`. Tablet should look narrower than phone or desktop.
 
 {{< haz_img key="mid_center" >}}
 <img src="files/haz-img-test.jpg" alt="mid_center — 75/50/75, centered">
@@ -78,7 +78,7 @@ Not floated. If it sits on the left edge, center align missed.
 
 ### Half square left (wrap + spacer)
 
-Existing starter. 50 / 50 / 50, 1/1, `m_align: left`.
+Existing starter. 50 / 50 / 50, 1/1, `m.align: left`.
 
 {{< haz_img key="half_sqr_left" >}}
 <img src="files/haz-img-test.jpg" alt="half_sqr_left — 50% square, float left">
