@@ -20,13 +20,81 @@ This post lives in a **leaf bundle**: `content/blog/demo-post-1/index.md` plus f
 
 {{< haz key="blog" >}}
 
-{{< haz_img key="story_wide" >}}
-<img src="files/haz-img-test.jpg" alt="haz_img test" class="haz_img_demo" loading="lazy">
+{{< haz_img key="story_wide" lazy=false >}}
+<img src="files/haz-img-test.jpg" alt="story_wide 16/9 cover, lazy off" class="haz_img_demo">
 {{< /haz_img >}}
 
 This paragraph is only for a short automatic summary if you add a `<!--more-->` marker after the intro line in a longer article.
 
 <!--more-->
+
+## haz_img presets
+
+Same file, different keys. Resize the window: 768 and 992 are the BPs.
+
+### As is
+
+Empty `ratio`. File keeps its own shape. No `auto` on `sizes`.
+
+{{< haz_img key="as_is" >}}
+<img src="files/haz-img-test.jpg" alt="as_is — file aspect, no frame">
+{{< /haz_img >}}
+
+The picture above should look like the photograph, not a 16/9 crop and not 150px tall.
+
+### Full, then half left
+
+100 / 100 / 50, float left. On a phone it is full width; on desktop it sits left and this copy should wrap the right side. Keep dragging the window across 992 to see the jump.
+
+{{< haz_img key="desk_half_left" >}}
+<img src="files/haz-img-test.jpg" alt="desk_half_left — full on small, half left on desktop">
+{{< /haz_img >}}
+
+Wrap text for the half-desktop float. If the next block starts beside the picture, the clear below failed. More words so a short window still has something to tuck beside the frame: the kit’s `sizes` string should pick a smaller file when this is only half the column.
+
+{{< haz_clear >}}
+
+### Quarter right
+
+25 / 25 / 25, float right. Small on every band. Copy should run down the left.
+
+{{< haz_img key="quarter_right" >}}
+<img src="files/haz-img-test.jpg" alt="quarter_right — 25% square, float right">
+{{< /haz_img >}}
+
+This column of words is here so the quarter square has a neighbor. On a narrow phone 25% is a thumbnail; on desktop it stays a thumbnail. That is the point of the test — width does not grow with the column.
+
+{{< haz_clear >}}
+
+### Mid, centered
+
+75 / 50 / 75, no float. `haz_img_center`. Tablet should look narrower than phone or desktop.
+
+{{< haz_img key="mid_center" >}}
+<img src="files/haz-img-test.jpg" alt="mid_center — 75/50/75, centered">
+{{< /haz_img >}}
+
+Not floated. If it sits on the left edge, the center class missed.
+
+### Half square left (wrap + clear)
+
+Existing starter. 50 / 50 / 50, 1/1, float left.
+
+{{< haz_img key="half_sqr_left" >}}
+<img src="files/haz-img-test.jpg" alt="half_sqr_left — 50% square, float left">
+{{< /haz_img >}}
+
+Square crop, text beside it. The next heading must start below, not in the leftover column.
+
+{{< haz_clear >}}
+
+### Tall frame
+
+3/4 cover, full width. Same landscape file — cover should clip the sides, not squash.
+
+{{< haz_img key="story_tall" >}}
+<img src="files/haz-img-test.jpg" alt="story_tall — 3/4 cover of a landscape file">
+{{< /haz_img >}}
 
 ## FPO section heading
 
