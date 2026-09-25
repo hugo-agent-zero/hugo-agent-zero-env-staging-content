@@ -52,7 +52,7 @@ The picture above should look like the photograph, not a 16/9 crop and not 150px
 
 Wrap text for the half-desktop float. If the next block starts beside the picture, the spacer below failed. More words so a short window still has something to tuck beside the frame: the kit’s `sizes` string should pick a smaller file when this is only half the column.
 
-{{< haz_spacer >}}
+{{< haz_tbd type="spacer" >}}
 
 ### Quarter right
 
@@ -64,7 +64,7 @@ Wrap text for the half-desktop float. If the next block starts beside the pictur
 
 This column of words is here so the quarter square has a neighbor. On a narrow phone 25% is a thumbnail; on desktop it stays a thumbnail. That is the point of the test — width does not grow with the column.
 
-{{< haz_spacer >}}
+{{< haz_tbd type="spacer" >}}
 
 ### Mid, centered
 
@@ -86,7 +86,7 @@ Existing starter. 50 / 50 / 50, 1/1, `m_align: left`.
 
 Square crop, text beside it. The next heading must start below, not in the leftover column.
 
-{{< haz_spacer >}}
+{{< haz_tbd type="spacer" >}}
 
 ### Tall frame
 
