@@ -48,7 +48,7 @@ params:
 
 The front matter sets **`slug: demo-post-2`**, which matches this folder name anyway — if you changed it to another slug, the URL’s last segment would follow `slug` instead of the folder name.
 
-{{< haz_tbd key="blog" >}}
+{{< haz_tbd name="blog" >}}
 
 ![Second FPO cover](cover.svg)
 
