@@ -40,4 +40,4 @@ params:
 
 This page checks single-template rendering.
 
-{{< haz key="page" >}}
+{{< haz_tbd key="page" >}}
