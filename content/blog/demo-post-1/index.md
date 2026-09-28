@@ -18,9 +18,9 @@ params:
 
 This post lives in a **leaf bundle**: `content/blog/demo-post-1/index.md` plus files in the same folder (for example `cover.svg`). The public URL is **`/blog/demo-post-1/`** from the folder name; you could override that with `slug:` in front matter if you wanted a different last segment.
 
-{{< haz_tbd key="blog" >}}
+{{< haz_tbd name="blog" >}}
 
-{{< haz_img key="story_wide" lazy=false >}}
+{{< haz_img name="story_wide" lazy=false >}}
 <img src="files/haz-img-test.jpg" alt="story_wide 16/9 cover, lazy off" class="haz_img_demo">
 {{< /haz_img >}}
 
@@ -30,13 +30,13 @@ This paragraph is only for a short automatic summary if you add a `<!--more-->` 
 
 ## haz_img presets
 
-Same file, different keys. Resize the window: 768 and 992 are the BPs.
+Same file, different names. Resize the window: 768 and 992 are the BPs.
 
 ### As is
 
 Empty `ratio`. File keeps its own shape. No `auto` on `sizes`.
 
-{{< haz_img key="as_is" >}}
+{{< haz_img name="as_is" >}}
 <img src="files/haz-img-test.jpg" alt="as_is — file aspect, no frame">
 {{< /haz_img >}}
 
@@ -46,7 +46,7 @@ The picture above should look like the photograph, not a 16/9 crop and not 150px
 
 100 / 100 / 50, `d.align: left` only. On a phone it is full width (no float); on desktop it sits left and this copy should wrap the right side. Keep dragging the window across 992 to see the jump.
 
-{{< haz_img key="desk_half_left" >}}
+{{< haz_img name="desk_half_left" >}}
 <img src="files/haz-img-test.jpg" alt="desk_half_left — full on small, half left on desktop">
 {{< /haz_img >}}
 
@@ -66,7 +66,7 @@ Wrap text for the half-desktop float. If the next block starts beside the pictur
 
 25 / 25 / 25, `m.align: right`. Small on every band. Copy should run down the left.
 
-{{< haz_img key="quarter_right" >}}
+{{< haz_img name="quarter_right" >}}
 <img src="files/haz-img-test.jpg" alt="quarter_right — 25% square, float right">
 {{< /haz_img >}}
 
@@ -88,7 +88,7 @@ This column of words is here so the quarter square has a neighbor. On a narrow p
 
 75 / 50 / 75, `m.align: center`. Tablet should look narrower than phone or desktop.
 
-{{< haz_img key="mid_center" >}}
+{{< haz_img name="mid_center" >}}
 <img src="files/haz-img-test.jpg" alt="mid_center — 75/50/75, centered">
 {{< /haz_img >}}
 
@@ -98,7 +98,7 @@ Not floated. If it sits on the left edge, center align missed.
 
 Existing starter. 50 / 50 / 50, 1/1, `m.align: left`.
 
-{{< haz_img key="half_sqr_left" >}}
+{{< haz_img name="half_sqr_left" >}}
 <img src="files/haz-img-test.jpg" alt="half_sqr_left — 50% square, float left">
 {{< /haz_img >}}
 
@@ -120,7 +120,7 @@ Square crop, text beside it. The next heading must start below, not in the lefto
 
 3/4 cover, full width. Same landscape file — cover should clip the sides, not squash.
 
-{{< haz_img key="story_tall" >}}
+{{< haz_img name="story_tall" >}}
 <img src="files/haz-img-test.jpg" alt="story_tall — 3/4 cover of a landscape file">
 {{< /haz_img >}}
 
