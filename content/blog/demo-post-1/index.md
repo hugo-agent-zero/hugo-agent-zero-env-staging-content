@@ -18,7 +18,7 @@ params:
 
 This post lives in a **leaf bundle**: `content/blog/demo-post-1/index.md` plus files in the same folder (for example `cover.svg`). The public URL is **`/blog/demo-post-1/`** from the folder name; you could override that with `slug:` in front matter if you wanted a different last segment.
 
-{{< haz key="blog" >}}
+{{< haz_tbd key="blog" >}}
 
 {{< haz_img key="story_wide" lazy=false >}}
 <img src="files/haz-img-test.jpg" alt="story_wide 16/9 cover, lazy off" class="haz_img_demo">
