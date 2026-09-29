@@ -2,7 +2,7 @@ name: pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, open-props-test]
   workflow_dispatch:
 
 permissions:
@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: hugo-agent-zero/hugo-agent-zero-child
+          ref: open-props-test
           path: site
       - uses: actions/setup-go@v5
         with:
@@ -34,11 +35,11 @@ jobs:
         env:
           GOPROXY: direct
         run: hugo mod get github.com/hugo-agent-zero/hugo-agent-zero-env-staging-content@${{ github.sha }}
-      - name: Use latest 1.x core
+      - name: Use open-props-test core
         working-directory: site
         env:
           GOPROXY: direct
-        run: hugo mod get github.com/hugo-agent-zero/hugo-agent-zero-core@v1.x.x
+        run: hugo mod get github.com/hugo-agent-zero/hugo-agent-zero-core@open-props-test
       - name: Build
         working-directory: site
         run: hugo --baseURL "https://hugo-agent-zero.github.io/hugo-agent-zero-env-staging-content/"
