@@ -30,7 +30,7 @@ This paragraph is only for a short automatic summary if you add a `<!--more-->` 
 
 ## haz_img presets
 
-Same file, different names. Resize the window: 768 and 992 are the BPs.
+Same file, different names. Resize across **480** and **768** (`max_px.m|t` + 1).
 
 ### As is
 
@@ -44,7 +44,7 @@ The picture above should look like the photograph, not a 16/9 crop and not 150px
 
 ### Full, then half left
 
-100 / 100 / 50, `d.align: left` only. On a phone it is full width (no float); on desktop it sits left and this copy should wrap the right side. Keep dragging the window across 992 to see the jump.
+100 / 100 / 50, `d.align: left` only. On a phone it is full width (no float); on desktop it sits left and this copy should wrap the right side. Drag across **768** to see the jump.
 
 {{< haz_img name="desk_half_left" >}}
 <img src="files/haz-img-test.jpg" alt="desk_half_left — full on small, half left on desktop">
@@ -123,6 +123,40 @@ Square crop, text beside it. The next heading must start below, not in the lefto
 {{< haz_img name="story_tall" >}}
 <img src="files/haz-img-test.jpg" alt="story_tall — 3/4 cover of a landscape file">
 {{< /haz_img >}}
+
+### Ratio shift (m / t / d)
+
+**Want:** one full-width frame whose **crop hole** changes by band — phone `16/9`, tablet `1/1`, desktop `3/4`. Same landscape file; `cover` should re-clip, not squash. Watch `--haz_img_ratio_*` in DevTools and drag past 480 then 768.
+
+{{< haz_img name="ratio_shift" >}}
+<img src="files/haz-img-test.jpg" alt="ratio_shift — 16/9 → 1/1 → 3/4 across m/t/d">
+{{< /haz_img >}}
+
+If the frame stays 16/9 on a wide window, tablet/desktop ratio inherit failed.
+
+### Third left (w: 33)
+
+**Want:** true-third width on every band (`33.333%` CSS + `sizes` hole ≈ ⅓ of `sm|md|lg`). Square crop, float left. Copy should wrap the other ~⅔. Check `sizes` uses thirds math, not a blunt `25%` ladder step.
+
+{{< haz_img name="third_left" >}}
+<img src="files/haz-img-test.jpg" alt="third_left — 33% square, float left">
+{{< /haz_img >}}
+
+Narrow phone: small thumbnail. Desktop: still one third of the column — not half, not quarter.
+
+{{< haz_do add="spacer" >}}
+
+### Two-thirds + ratio mix (67 ↔ 33)
+
+**Want:** width **and** ratio both move. Mobile: `67` right + `16/9`. Tablet: flips to `33` left + `1/1`. Desktop: back to `67` right + `3/4`. Prove `w: 33|67` and per-band `ratio` can coexist; floats should swap sides at the BPs.
+
+{{< haz_img name="two_thirds_ratio" >}}
+<img src="files/haz-img-test.jpg" alt="two_thirds_ratio — 67/33/67, ratios 16/9 → 1/1 → 3/4">
+{{< /haz_img >}}
+
+Wrap text here so each band has something beside the frame. If tablet still floats right or stays landscape, the `t` band missed.
+
+{{< haz_do add="spacer" >}}
 
 ## FPO section heading
 
