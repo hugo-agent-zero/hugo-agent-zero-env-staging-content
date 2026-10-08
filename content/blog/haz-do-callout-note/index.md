@@ -14,7 +14,7 @@ params:
   desc_long: "Note is the default callout. This page shows a titled note, a note with no title, and Markdown in the body."
 ---
 
-Type **note**. This is also the default when `type` is omitted. Large sticky-note icon, title and body in the second column.
+Type **note**. This is also the default when `type` is omitted. Pen-to-square icon, title and body in the second column.
 
 {{< haz_do add="callout" type="note" title="Note" >}}
 Neutral supporting information. No action required.

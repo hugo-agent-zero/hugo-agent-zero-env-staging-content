@@ -14,7 +14,7 @@ params:
   desc_long: "Caution callout with a circle-exclamation icon. Samples cover a title, no title, and Markdown in the body."
 ---
 
-Type **caution**. Circle-exclamation icon. Highest stakes.
+Type **caution**. Circle-exclamation icon. Probably a bad idea. Proceed at your own risk.
 
 {{< haz_do add="callout" type="caution" title="Caution" >}}
 This deletes production data.

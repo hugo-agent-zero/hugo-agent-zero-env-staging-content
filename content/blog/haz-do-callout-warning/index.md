@@ -14,7 +14,7 @@ params:
   desc_long: "Warning callout with a triangle icon. Samples cover a title, no title, and Markdown in the body."
 ---
 
-Type **warning**. Triangle icon. Something can go wrong.
+Type **warning**. Triangle icon. Don't do this, or it blows up.
 
 {{< haz_do add="callout" type="warning" title="Warning" >}}
 This overwrites the existing file.
