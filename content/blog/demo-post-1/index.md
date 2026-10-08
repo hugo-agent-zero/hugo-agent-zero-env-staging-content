@@ -52,15 +52,15 @@ The picture above should look like the photograph, not a 16/9 crop and not 150px
 
 Wrap text for the half-desktop float. If the next block starts beside the picture, the spacer below failed. More words so a short window still has something to tuck beside the frame: the kit’s `sizes` string should pick a smaller file when this is only half the column.
 
-{{< haz_do add="spacer" >}}
+{{< haz_do add="spacer" />}}
 
-{{< haz_do add="spacer" height="2" >}}
+{{< haz_do add="spacer" height="2" />}}
 
-{{< haz_do add="spacer" height="0.5" >}}
+{{< haz_do add="spacer" height="0.5" />}}
 
-{{< haz_do add="spacer" height="0" >}}
+{{< haz_do add="spacer" height="0" />}}
 
-{{< haz_do add="spacer" height="24" height_unit="px" >}}
+{{< haz_do add="spacer" height="24" height_unit="px" />}}
 
 ### Quarter right
 
@@ -72,17 +72,17 @@ Wrap text for the half-desktop float. If the next block starts beside the pictur
 
 This column of words is here so the quarter square has a neighbor. On a narrow phone 25% is a thumbnail; on desktop it stays a thumbnail. That is the point of the test — width does not grow with the column.
 
-{{< haz_do add="spacer" >}}
+{{< haz_do add="spacer" />}}
 
-{{< haz_do add="spacer" height="1.5" height_unit="em" >}}
+{{< haz_do add="spacer" height="1.5" height_unit="em" />}}
 
-{{< haz_do add="spacer" height="5" height_unit="vh" >}}
+{{< haz_do add="spacer" height="5" height_unit="vh" />}}
 
-{{< haz_do add="spacer" height="5" height_unit="%" >}}
+{{< haz_do add="spacer" height="5" height_unit="%" />}}
 
-{{< haz_do add="spacer" height="2" height_unit="bogus" >}}
+{{< haz_do add="spacer" height="2" height_unit="bogus" />}}
 
-{{< haz_do add="spacer" height_unit="px" >}}
+{{< haz_do add="spacer" height_unit="px" />}}
 
 ### Mid, centered
 
@@ -104,17 +104,17 @@ Existing starter. 50 / 50 / 50, 1/1, `m.align: left`.
 
 Square crop, text beside it. The next heading must start below, not in the leftover column.
 
-{{< haz_do add="spacer" >}}
+{{< haz_do add="spacer" />}}
 
-{{< haz_do add="spacer" clear=false >}}
+{{< haz_do add="spacer" clear=false />}}
 
-{{< haz_do add="spacer" class="haz_my_gap" >}}
+{{< haz_do add="spacer" class="haz_my_gap" />}}
 
-{{< haz_do add="spacer" height="2" class="haz_my_gap" >}}
+{{< haz_do add="spacer" height="2" class="haz_my_gap" />}}
 
-{{< haz_do add="spacer" height="8" height_unit="px" clear=false class="haz_my_gap" >}}
+{{< haz_do add="spacer" height="8" height_unit="px" clear=false class="haz_my_gap" />}}
 
-{{< haz_do add="nope" >}}
+{{< haz_do add="nope" />}}
 
 ### Tall frame
 
@@ -144,7 +144,7 @@ If the frame stays 16/9 on a wide window, tablet/desktop ratio inherit failed.
 
 Narrow phone: small thumbnail. Desktop: still one third of the column — not half, not quarter.
 
-{{< haz_do add="spacer" >}}
+{{< haz_do add="spacer" />}}
 
 ### Two-thirds + ratio mix (67 ↔ 33)
 
@@ -156,7 +156,7 @@ Narrow phone: small thumbnail. Desktop: still one third of the column — not ha
 
 Wrap text here so each band has something beside the frame. If tablet still floats right or stays landscape, the `t` band missed.
 
-{{< haz_do add="spacer" >}}
+{{< haz_do add="spacer" />}}
 
 ## FPO section heading
 
