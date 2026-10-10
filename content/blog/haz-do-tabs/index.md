@@ -16,9 +16,9 @@ params:
 
 Type **tabs**. Each tab is a radio and a label. The browser switches the panel. No script. A panel is Markdown unless `html=true`, which passes the markup through.
 
-{{< haz_do add="tabs" >}}
+{{< haz_do add="tabs" embla=true >}}
 
-{{< haz_do add="tab" title="Write" >}}
+{{< haz_do add="tab" title="Write Test" >}}
 Use a blank line between tabs.
 
 A code fence is just a panel:
@@ -28,17 +28,17 @@ hugo server
 ~~~
 {{< /haz_do >}}
 
-{{< haz_do add="tab" title="Ship" >}}
+{{< haz_do add="tab" title="Ship Test" >}}
 1. Merge core.
 2. Fast-forward `v1.x.x`.
 {{< /haz_do >}}
 
-{{< haz_do add="tab" title="Notes" >}}
+{{< haz_do add="tab" title="Notes Test" >}}
 - CSS only.
 - The browser switches the panel.
 {{< /haz_do >}}
 
-{{< haz_do add="tab" title="Markup" html=true >}}
+{{< haz_do add="tab" title="Markup Test" html=true >}}
 <p>This <strong>panel</strong> is HTML, same pass-through as <code>haz_img</code>.</p>
 {{< /haz_do >}}
 
