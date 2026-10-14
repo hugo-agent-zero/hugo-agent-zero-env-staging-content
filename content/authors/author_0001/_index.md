@@ -5,7 +5,7 @@ params:
   head_tags:
     document:
       title:
-        title: "JANE DOE (local title)"
+        _title: "JANE DOE (local title)"
     meta:
       html_basic:
         description: "Demo page for single blog post layout and params.meta.html_basic meta tags."
