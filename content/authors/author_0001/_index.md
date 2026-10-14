@@ -6,6 +6,7 @@ params:
     document:
       title:
         _title: "JANE DOE (local title)"
+        _prefix_singular: false
     meta:
       html_basic:
         description: "Demo page for single blog post layout and params.meta.html_basic meta tags."
