@@ -4,4 +4,3 @@ preset:
   _og:url: ".Permalink"
   _og:image: /defaults/meta_tag_default_image.png
   og:description: og description
-  _prefix_singular: false

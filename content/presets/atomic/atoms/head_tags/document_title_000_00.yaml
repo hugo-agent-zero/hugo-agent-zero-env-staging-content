@@ -3,4 +3,3 @@ preset:
   _title_prefix: ""
   title_suffix: "Hugo Agent Zero Child"
   _delimiter: " | "
-  _prefix_singular: false
