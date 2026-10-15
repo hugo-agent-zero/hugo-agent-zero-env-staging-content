@@ -16,7 +16,7 @@ params:
 
 Type **warning**. Triangle icon. Don't do this, or it blows up.
 
-{{< haz_do add="callout" type="warning" title="Warning" >}}
+{{< haz_do add="callout" type="warning" title="Warning" id="dont-ship-secrets" >}}
 This overwrites the existing file.
 {{< /haz_do >}}
 
