@@ -16,7 +16,7 @@ params:
 
 Type **list**. Optional title. The body is a normal Markdown list. Write `1.` for numbers or `-` for bullets. The shortcode only adds the block chrome.
 
-{{< haz_do add="list" title="Publish a post" >}}
+{{< haz_do add="list" title="Publish a post" id="list-publish" >}}
 1. Write the Markdown.
 2. Put a blank line between shortcodes.
 3. Rebuild the site.

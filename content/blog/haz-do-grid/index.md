@@ -18,7 +18,7 @@ Type **grid**. Paste one element per cell. A heading and a paragraph stay one ce
 
 ## Two
 
-{{< haz_do add="grid" >}}
+{{< haz_do add="grid" id="grid-two" >}}
 <a class="haz_do_grid__item" href="/blog/">
   <h3>Write</h3>
   <p>Draft the page in Markdown.</p>

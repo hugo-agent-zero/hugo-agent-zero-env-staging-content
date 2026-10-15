@@ -16,9 +16,9 @@ params:
 
 Type **tabs**. Each tab is a radio and a label. The browser switches the panel. No script. A panel is Markdown unless `html=true`, which passes the markup through.
 
-{{< haz_do add="tabs" swipe=true >}}
+{{< haz_do add="tabs" swipe=true id="tabs-swipe" >}}
 
-{{< haz_do add="tab" title="Write Test" >}}
+{{< haz_do add="tab" title="Write Test" id="tab-write" >}}
 Use a blank line between tabs.
 
 A code fence is just a panel:

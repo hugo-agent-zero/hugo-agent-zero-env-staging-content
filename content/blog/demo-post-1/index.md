@@ -108,7 +108,7 @@ Square crop, text beside it. The next heading must start below, not in the lefto
 
 {{< haz_do add="spacer" clear=false />}}
 
-{{< haz_do add="spacer" class="haz_my_gap" />}}
+{{< haz_do add="spacer" class="haz_my_gap" id="spacer-gap" />}}
 
 {{< haz_do add="spacer" height="2" class="haz_my_gap" />}}
 
