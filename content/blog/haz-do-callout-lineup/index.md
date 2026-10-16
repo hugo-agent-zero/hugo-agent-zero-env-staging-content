@@ -16,7 +16,7 @@ params:
 
 One short sample of each type. Accent colors are placeholders so this page can show whether they separate.
 
-Warning, cancel, and love share one red. Tip, caution, happy, and sad share one yellow. Info, important, and peace share one blue. Code uses Simple `--code` (pink here).
+Warning, cancel, and love share one red. Tip, caution, happy, and sad share one yellow. Info, important, and peace share one blue. Code uses Simple `--code`. Steps is brand pink; the badge is `step=`, not FA.
 
 {{< haz_do add="callout" type="note" title="Note" >}}
 Neutral supporting information. No action required.
@@ -32,6 +32,10 @@ Context that helps, without asking for a change.
 
 {{< haz_do add="callout" type="code" title="Code" >}}
 A snippet, a command, or an API note. Color is Simple `--code`.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="steps" step="1" title="Steps" >}}
+Badge instead of FA. Color is `--haz_callout_steps` (brand pink).
 {{< /haz_do >}}
 
 {{< haz_do add="callout" type="important" title="Important" >}}
