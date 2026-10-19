@@ -14,7 +14,7 @@ params:
   desc_long: "Code callout with the FA </> icon. Color is Simple --code. Samples cover a title, no title, and Markdown in the body."
 ---
 
-Type **code**. `</>` icon. Use it for snippets, commands, and API notes. Do not write `<pre>` or `<code>`. A fence in the body is the code block, and any prose around it stays prose. No fence at all, and the whole body is one code block.
+Type **code**. `</>` icon. Use it for snippets, commands, and API notes. Do not write `<pre>` or `<code>`. After trimming, a body that opens and closes with a fence is left as written. Anything else is wrapped as one code block.
 
 {{< haz_do add="callout" type="code" title="Command" >}}
 Pin core at `@v1.x.x`. Pages pulls that branch, not `main`.
