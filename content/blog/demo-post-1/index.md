@@ -20,8 +20,8 @@ This post lives in a **leaf bundle**: `content/blog/demo-post-1/index.md` plus f
 
 {{< haz_tbd name="blog" >}}
 
-{{< haz_img name="story_wide" lazy=false >}}
-<img src="files/haz-img-test.jpg" alt="story_wide 16/9 cover, lazy off" class="haz_img_demo">
+{{< haz_img name="full_widescreen" lazy=false >}}
+<img src="files/haz-img-test.jpg" alt="full_widescreen 16/9 cover, lazy off" class="haz_img_demo">
 {{< /haz_img >}}
 
 This paragraph is only for a short automatic summary if you add a `<!--more-->` marker after the intro line in a longer article.
@@ -30,7 +30,7 @@ This paragraph is only for a short automatic summary if you add a `<!--more-->` 
 
 ## haz_img presets
 
-Same file, different names. Resize across **480** and **768** (`max_px.m|t` + 1).
+Same file, different names. Resize across **480** and **768**.
 
 ### As is
 
@@ -42,15 +42,15 @@ Empty `ratio`. File keeps its own shape. No `auto` on `sizes`.
 
 The picture above should look like the photograph, not a 16/9 crop and not 150px tall.
 
-### Full, then half left
+### Full, then half left (alt)
 
-100 / 100 / 50, `d.align: left` only. On a phone it is full width (no float); on desktop it sits left and this copy should wrap the right side. Drag across **768** to see the jump.
+`full_to_half_left`. On a phone it is full width; on desktop it sits left and this copy should wrap. Drag across **768** to see the jump.
 
-{{< haz_img name="desk_half_left" >}}
-<img src="files/haz-img-test.jpg" alt="desk_half_left — full on small, half left on desktop">
+{{< haz_img name="full_to_half_left" >}}
+<img src="files/haz-img-test.jpg" alt="full_to_half_left — full on small, half left on desktop">
 {{< /haz_img >}}
 
-Wrap text for the half-desktop float. If the next block starts beside the picture, the spacer below failed. More words so a short window still has something to tuck beside the frame: the kit’s `sizes` string should pick a smaller file when this is only half the column.
+Wrap text for the half-desktop float. If the next block starts beside the picture, the spacer below failed.
 
 {{< haz_do add="spacer" />}}
 
@@ -64,13 +64,13 @@ Wrap text for the half-desktop float. If the next block starts beside the pictur
 
 ### Quarter right
 
-25 / 25 / 25, `m.align: right`. Small on every band. Copy should run down the left.
+`quarter_right_sqr`. Small on every band. Copy should run down the left.
 
-{{< haz_img name="quarter_right" >}}
-<img src="files/haz-img-test.jpg" alt="quarter_right — 25% square, float right">
+{{< haz_img name="quarter_right_sqr" >}}
+<img src="files/haz-img-test.jpg" alt="quarter_right_sqr — 25% square, float right">
 {{< /haz_img >}}
 
-This column of words is here so the quarter square has a neighbor. On a narrow phone 25% is a thumbnail; on desktop it stays a thumbnail. That is the point of the test — width does not grow with the column.
+This column of words is here so the quarter square has a neighbor. On a narrow phone 25% is a thumbnail; on desktop it stays a thumbnail.
 
 {{< haz_do add="spacer" />}}
 
@@ -84,25 +84,21 @@ This column of words is here so the quarter square has a neighbor. On a narrow p
 
 {{< haz_do add="spacer" height_unit="px" />}}
 
-### Mid, centered
+### Three-quarters, centered
 
-75 / 50 / 75, `m.align: center`. Tablet should look narrower than phone or desktop.
+`three_quarters_center_landscape`. Not floated. If it sits on the left edge, center align missed.
 
-{{< haz_img name="mid_center" >}}
-<img src="files/haz-img-test.jpg" alt="mid_center — 75/50/75, centered">
+{{< haz_img name="three_quarters_center_landscape" >}}
+<img src="files/haz-img-test.jpg" alt="three_quarters_center_landscape — 75% centered">
 {{< /haz_img >}}
-
-Not floated. If it sits on the left edge, center align missed.
 
 ### Half square left (wrap + spacer)
 
-Existing starter. 50 / 50 / 50, 1/1, `m.align: left`.
+`half_left_sqr`. Square crop, text beside it. The next heading must start below, not in the leftover column.
 
-{{< haz_img name="half_sqr_left" >}}
-<img src="files/haz-img-test.jpg" alt="half_sqr_left — 50% square, float left">
+{{< haz_img name="half_left_sqr" >}}
+<img src="files/haz-img-test.jpg" alt="half_left_sqr — 50% square, float left">
 {{< /haz_img >}}
-
-Square crop, text beside it. The next heading must start below, not in the leftover column.
 
 {{< haz_do add="spacer" />}}
 
@@ -118,43 +114,37 @@ Square crop, text beside it. The next heading must start below, not in the lefto
 
 ### Tall frame
 
-3/4 cover, full width. Same landscape file — cover should clip the sides, not squash.
+`full_portrait`. Same landscape file — cover should clip the sides, not squash.
 
-{{< haz_img name="story_tall" >}}
-<img src="files/haz-img-test.jpg" alt="story_tall — 3/4 cover of a landscape file">
+{{< haz_img name="full_portrait" >}}
+<img src="files/haz-img-test.jpg" alt="full_portrait — 3/4 cover of a landscape file">
 {{< /haz_img >}}
 
-### Ratio shift (m / t / d)
+### Half centered (not full)
 
-**Want:** one full-width frame whose **crop hole** changes by band — phone `16/9`, tablet `1/1`, desktop `3/4`. Same landscape file; `cover` should re-clip, not squash. Watch `--haz_img_ratio_*` in DevTools and drag past 480 then 768.
+`half_center_sqr`. Smaller than full, centered, not floated left or right.
 
-{{< haz_img name="ratio_shift" >}}
-<img src="files/haz-img-test.jpg" alt="ratio_shift — 16/9 → 1/1 → 3/4 across m/t/d">
+{{< haz_img name="half_center_sqr" >}}
+<img src="files/haz-img-test.jpg" alt="half_center_sqr — 50% square, centered">
 {{< /haz_img >}}
 
-If the frame stays 16/9 on a wide window, tablet/desktop ratio inherit failed.
+### Third left
 
-### Third left (w: 33)
+`third_left_sqr`. True-third width, square crop, float left. Copy should wrap the other two thirds.
 
-**Want:** true-third width on every band (`33.333%` CSS + `sizes` hole ≈ ⅓ of `sm|md|lg`). Square crop, float left. Copy should wrap the other ~⅔. Check `sizes` uses thirds math, not a blunt `25%` ladder step.
-
-{{< haz_img name="third_left" >}}
-<img src="files/haz-img-test.jpg" alt="third_left — 33% square, float left">
+{{< haz_img name="third_left_sqr" >}}
+<img src="files/haz-img-test.jpg" alt="third_left_sqr — 33% square, float left">
 {{< /haz_img >}}
-
-Narrow phone: small thumbnail. Desktop: still one third of the column — not half, not quarter.
 
 {{< haz_do add="spacer" />}}
 
-### Two-thirds + ratio mix (67 ↔ 33)
+### Three-quarters from half (alt)
 
-**Want:** width **and** ratio both move. Mobile: `67` right + `16/9`. Tablet: flips to `33` left + `1/1`. Desktop: back to `67` right + `3/4`. Prove `w: 33|67` and per-band `ratio` can coexist; floats should swap sides at the BPs.
+`three_quarters_from_half`. Half centered on phone; three-quarters centered from tablet up. Drag past **480**.
 
-{{< haz_img name="two_thirds_ratio" >}}
-<img src="files/haz-img-test.jpg" alt="two_thirds_ratio — 67/33/67, ratios 16/9 → 1/1 → 3/4">
+{{< haz_img name="three_quarters_from_half" >}}
+<img src="files/haz-img-test.jpg" alt="three_quarters_from_half — 50 then 75, centered">
 {{< /haz_img >}}
-
-Wrap text here so each band has something beside the frame. If tablet still floats right or stays landscape, the `t` band missed.
 
 {{< haz_do add="spacer" />}}
 
