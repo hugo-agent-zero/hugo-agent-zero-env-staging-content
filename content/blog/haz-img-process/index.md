@@ -27,3 +27,13 @@ Same master, half left square (still process). CSS frame may crop display; files
 {{< haz_img name="half_left_sqr" process=true >}}
 <img src="files/seed.jpg" alt="half_left_sqr with process=true">
 {{< /haz_img >}}
+
+**Preset gate:** `demo_off_redirect` is `enabled: false` with `enabled_false: as_is` — resolves like `as_is` (no frame). `demo_off_dead` is off with no redirect (HTML comment only; no enrich).
+
+{{< haz_img name="demo_off_redirect" process=true >}}
+<img src="files/seed.jpg" alt="demo_off_redirect → as_is">
+{{< /haz_img >}}
+
+{{< haz_img name="demo_off_dead" process=true >}}
+<img src="files/seed.jpg" alt="demo_off_dead should not enrich">
+{{< /haz_img >}}
