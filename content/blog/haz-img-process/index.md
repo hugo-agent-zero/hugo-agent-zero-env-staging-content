@@ -10,11 +10,11 @@ tags:
   - haz_img
   - demo
 params:
-  desc_short: "One master image; haz_img process=true builds the rwd_widths ladder."
-  desc_long: "Dogfood for HQ #165. Bundle has only seed.jpg (from demo-post-1 xxl). No _xs/_sm/… files. Shortcode process=true asks Hugo to Resize missing rungs (q.jpeg from settings)."
+  desc_short: "One master image; process builds the ladder (small JPEG, lg+ WebP)."
+  desc_long: "Dogfood for HQ #165. Bundle has only seed.jpg. process=true fills missing rungs; format inherit on xs–md, webp on lg+ (q.webp / preset override)."
 ---
 
-POC for **process**: the page bundle has a single master (`files/seed.jpg`, from demo-post-1 `_xxl`). There are no `seed_xs.jpg` … stubs. With `process=true`, `haz_img` fills those rungs via Hugo `Resize` (width-only; quality from `rwd_widths.*.q.jpeg` / preset override).
+POC for **process**: the page bundle has a single master (`files/seed.jpg`, from demo-post-1 `_xxl`). There are no `seed_xs.jpg` … stubs. With `process=true`, `haz_img` fills those rungs via Hugo `Resize` (width-only). Ship settings: `xs`/`sm`/`md` stay `format: inherit` (JPEG); `lg`+ use `format: webp`. Stubs would still win as written; `src` stays the master.
 
 {{< haz_img name="full_widescreen" process=true >}}
 <img src="files/seed.jpg" alt="process=true — Hugo builds the ladder from one master">
