@@ -28,7 +28,8 @@ jobs:
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.152.2"
-          extended: false
+          # WebP (and other) process Resize needs Hugo Extended.
+          extended: true
       - name: Use this content commit
         working-directory: site
         env:
