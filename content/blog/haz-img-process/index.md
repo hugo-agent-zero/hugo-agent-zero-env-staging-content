@@ -37,3 +37,9 @@ Same master, half left square (still process). CSS frame may crop display; files
 {{< haz_img name="demo_off_dead" process=true >}}
 <img src="files/seed.jpg" alt="demo_off_dead should not enrich">
 {{< /haz_img >}}
+
+**Rung gate:** `quarter_left_sqr` sets `lg`/`xl`/`xxl` `enabled: false` — srcset should stop at md (767w).
+
+{{< haz_img name="quarter_left_sqr" process=true >}}
+<img src="files/seed.jpg" alt="quarter_left_sqr without large rungs">
+{{< /haz_img >}}
