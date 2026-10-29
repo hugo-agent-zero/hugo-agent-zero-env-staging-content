@@ -22,10 +22,10 @@ POC for **process**: the page bundle has a single master (`files/seed.jpg`, from
 
 <!--more-->
 
-Same master, half left square (still process). CSS frame may crop display; files keep the master’s aspect.
+Same master, half left square (still process). This preset uses `fit: contain` (object-fit); files keep the master’s aspect.
 
 {{< haz_img name="half_left_sqr" process=true >}}
-<img src="files/seed.jpg" alt="half_left_sqr with process=true">
+<img src="files/seed.jpg" alt="half_left_sqr fit=contain">
 {{< /haz_img >}}
 
 **Preset gate:** `demo_off_redirect` is `enabled: false` with `enabled_false: as_is` — resolves like `as_is` (no frame). `demo_off_dead` is off with no redirect (HTML comment only; no enrich).
