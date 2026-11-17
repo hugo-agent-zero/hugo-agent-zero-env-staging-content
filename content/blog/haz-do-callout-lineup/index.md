@@ -16,7 +16,7 @@ params:
 
 One short sample of each type. Accent colors are placeholders so this page can show whether they separate.
 
-Warning, cancel, and love share one red. Tip, caution, happy, and sad share one yellow. Info, important, and peace share one blue. Code uses Simple `--code`. Steps is brand pink; the badge is `step=`, not FA.
+Warning, cancel, and love share one red. Tip, caution, happy, and sad share one yellow. Info, important, and focus share one blue. Understanding, peace, play, pause, fast-forward, and rewind share one green. Go is brand primary. Code uses Simple `--code`. Steps is brand pink; the badge is `step=`, not FA.
 
 {{< haz_do add="callout" type="note" title="Note" >}}
 Neutral supporting information. No action required.
@@ -67,7 +67,7 @@ This one is a favorite. Same red as warning and cancel.
 {{< /haz_do >}}
 
 {{< haz_do add="callout" type="peace" title="Peace" >}}
-Same blue as info and important. Peace sign.
+Same green as understanding and the media set. Peace sign.
 {{< /haz_do >}}
 
 {{< haz_do add="callout" type="calendar" title="Calendar" >}}
@@ -76,4 +76,32 @@ On the schedule. Same grey as note.
 
 {{< haz_do add="callout" type="deadline" title="Deadline" >}}
 Due soon. Same grey as note.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="focus" title="Focus" >}}
+Look here. Eye icon. Same blue as info and important.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="understanding" title="Understanding" >}}
+Balance / dig into it. Yin-yang. Same green as peace and play.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="go" title="Go" >}}
+Launch. Rocket. Brand primary.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="play" title="Play" >}}
+Dive in / start this section. Same green as understanding.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="pause" title="Pause" >}}
+Aside / hold that thought. Same green as play.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="fast-forward" title="Fast forward" >}}
+Skip ahead. Same green as play.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="rewind" title="Rewind" >}}
+Recap / go back. Same green as play.
 {{< /haz_do >}}
