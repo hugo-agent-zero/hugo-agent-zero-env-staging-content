@@ -18,6 +18,8 @@ One short sample of each type. Accent colors are placeholders so this page can s
 
 Warning, cancel, and love share one red. Tip, caution, happy, and sad share one yellow. Info, important, and focus share one blue. Understanding, peace, play, pause, fast-forward, and rewind share one green. Go is brand primary. Code uses Simple `--code`. Steps is brand pink; the badge is `step=`, not FA.
 
+The earth set is blue: africa, americas, asia, europe, oceania. There is no plain earth or globe default. The people set is purple: person-dress, person-trousers, human-xx, human-xy, and user-circle. Clothing and gene symbols, not gender labels. There is no plain person default.
+
 {{< haz_do add="callout" type="note" title="Note" >}}
 Neutral supporting information. No action required.
 {{< /haz_do >}}
@@ -104,4 +106,44 @@ Skip ahead. Same green as play.
 
 {{< haz_do add="callout" type="rewind" title="Rewind" >}}
 Recap / go back. Same green as play.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="earth-africa" title="Earth: Africa" >}}
+Regional globe. Blue. No default view.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="earth-americas" title="Earth: Americas" >}}
+Regional globe. Blue. No default view.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="earth-asia" title="Earth: Asia" >}}
+Regional globe. Blue. No default view.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="earth-europe" title="Earth: Europe" >}}
+Regional globe. Blue. No default view.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="earth-oceania" title="Earth: Oceania" >}}
+Regional globe. Blue. No default view.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="person-dress" title="Person: Dress" >}}
+Clothing silhouette. Purple. Not a gender label.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="person-trousers" title="Person: Trousers" >}}
+Clothing silhouette. Purple. HAZ alias of the FA person glyph. Not a gender label.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="human-xx" title="Human: XX" >}}
+Gene symbol. Purple.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="human-xy" title="Human: XY" >}}
+Gene symbol. Purple.
+{{< /haz_do >}}
+
+{{< haz_do add="callout" type="user-circle" title="User" >}}
+Neutral person. Purple.
 {{< /haz_do >}}
